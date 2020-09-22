@@ -6,6 +6,8 @@ import { RiArrowLeftSLine } from 'react-icons/ri';
 import App from '../components/modal';
 import State from '../components/stateBar.js';
 import Tag from '../components/tag.js';
+import BB from '../components/filter.js'
+
 
 
 
@@ -31,7 +33,9 @@ export default class Main extends Component {
                 <div className="container">
                     <div className="mainSection">
 
-                        <State />
+                            <State />
+                          
+                           <BB />
                     
                     </div>
 

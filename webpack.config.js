@@ -1,4 +1,5 @@
 const path = require('path');
+var webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
     template: path.join(__dirname, "examples/src/index.html"),
@@ -13,14 +14,29 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.js$/,
+                exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader',
+                    loader: "babel-loader",
                     options: {
-                        presets: ['env', 'react']
-                    }
+                        presets: ["@babel/preset-env", "@babel/preset-react"],
+                        "plugins": [
+                            [
+                                "@babel/plugin-proposal-class-properties",
+                                {
+                                    "loose": true
+                                }
+                            ]
+                        ]
+                    },
                 },
-                exclude: /node_modules/
+                
+            },
+            {
+                test: /\.jsx$/,
+                loader: "react-hot!babel",
+                exclude: [/node_modules/, /public/],
+                
             },
             {
                 test: /\.css$/,
