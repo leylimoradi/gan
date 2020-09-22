@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import ReactDOM from "react-dom";
-
+import 'swiper/swiper-bundle.css';
 import './styles.css';
 import Head from './components/header.js';
 import Main from './components/main.js';

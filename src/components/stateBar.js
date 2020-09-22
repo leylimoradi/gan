@@ -3,7 +3,7 @@ import { Component } from 'react';
 import data from "../data/city.json";
 import SwiperCore, { A11y, Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
+
 
 import { MdKeyboardArrowLeft } from 'react-icons/md';
 import { MdKeyboardArrowRight } from 'react-icons/md';
