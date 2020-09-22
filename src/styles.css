@@ -107,6 +107,7 @@ footer {
 main {
     margin-top: 50px;
     font-size: 14px;
+    display: grid;
 }
 .searchField::placeholder {
     color: white;
@@ -396,7 +397,7 @@ a {
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
-     font-family: IRANSans;
+    font-family: IRANSans;
 }
 .filterBtn {
     position: relative;
@@ -546,4 +547,105 @@ a {
     float: left;
     font-size: 13px;
     text-align: center;
+}
+.pager {
+    width: 100%;
+    height: auto;
+
+    float: right;
+    position: relative;
+
+}
+.ui[class*="one column"].grid > .column:not(.row) {
+    width: fit-content;
+    float: right;
+
+    padding: 0;
+}
+.ui[class*="one column"].grid > .column:last-child:not(.row) {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    padding: 0;
+    bottom: 0;
+    top: 0;
+    height: auto;
+}
+.ui.form .fields {
+    margin: 0;
+}
+.ui.grid {
+    width: fit-content;
+    margin: auto;
+    float: unset;
+
+}
+main .container {
+    position: relative;
+}
+.ui.segment {
+    margin-bottom: 0;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+.ui.form .two.fields > .field {
+    width: 100%;
+}
+.ui.form .field > label {
+    display: block;
+    margin: 0;
+    color: black;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: none;
+    float: left;
+    width: auto;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    height: 37px;
+    font-family: IRANSans;
+}
+.ui.form .field .ui.input,
+.ui.form .fields .field .ui.input {
+    width: 40px;
+    height: 37px;
+    background: #fff;
+    border-radius: 0;
+    border: 1px solid #cccccc;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 13px;
+    font-family: IRANSans;
+}
+.ui.form .two.fields .ui.input input {
+    padding: 0;
+    width: 100%;
+    border: 0;
+    text-align: unset;
+    font-family: IRANSans;
+
+}
+.ui.form {
+    height: 100%;
+}
+.ui.menu > .item:first-child {
+    border-radius: 0;
+}
+.ui.pagination.menu .item:last-child {
+    border-radius: 0;
+}
+.ui.menu {
+    border-radius: 0;
+    box-shadow: unset;
+    font-family: IRANSans;
+
+}
+.ui.mini.menu {
+    font-size: 13px;
+}
+a,
+.ui.menu .item{
+    outline: none;
 }

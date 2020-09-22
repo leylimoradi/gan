@@ -6,7 +6,9 @@ import { RiArrowLeftSLine } from 'react-icons/ri';
 import App from '../components/modal';
 import State from '../components/stateBar.js';
 import Tag from '../components/tag.js';
-import BB from '../components/filter.js'
+import BB from '../components/filter.js';
+
+import PaginationExampleCustomization from '../components/pagination.js'
 
 
 
@@ -43,8 +45,12 @@ export default class Main extends Component {
                     <aside className="sideSection">
                         <div className="titleSide">کلیدواژه</div>
                         <Tag />
-                    </aside>
+                        </aside>
+                        <div className="pager">
+                            <PaginationExampleCustomization />
+                        </div>
                     </div>
+                 
                 </main>
             </Fragment>
         )

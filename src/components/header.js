@@ -6,11 +6,14 @@ import Menu from '../components/menu'
 
 
 export default class Head extends Component {
+
     render() {
         return (
 
             <Fragment>
-             <header>
+
+                <header>
+                    
                 <div className="container">
                     <Menu />
                     <div className="logo">
@@ -26,6 +29,7 @@ export default class Head extends Component {
                     </div>
                     </div>
                 </header>
+
             </Fragment>
         )
     }
