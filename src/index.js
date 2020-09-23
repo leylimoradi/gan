@@ -4,9 +4,10 @@ import 'swiper/swiper-bundle.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'semantic-ui-css/semantic.min.css'
 import './styles.css';
-import './stylesheets/styles.scss'
+
 import Head from './components/header.js';
 import Main from './components/main.js';
+import './stylesheets/styles.scss'
 
 
 
