@@ -1,0 +1,75 @@
+
+@font-face{
+
+    font-family: "iranganFont";
+    src: url('../font/IRANSansWeb.ttf') format('truetype');
+}
+$fontMain :"iranganFont", sans-serif;
+
+$input-border :1px solid #dedede;
+$red :#e43535;
+
+footer {
+    .container {
+        height: auto;
+    }
+    .rightSection {
+        width: 50%;
+          height: 100px;
+        float: right;
+        margin:20px 0;
+        div {
+            text-align: right;
+            width: calc(100% / 3);
+            height: auto;
+            float: right;
+            font-size: 16px;
+            cursor: default;
+
+            ul {
+                margin-top: 5px;
+                li {
+                    text-align: right;
+                    height: auto;
+                    font-size: 13px;
+                    color: #6b6868;
+                    padding: 5px 0;
+                    cursor: pointer;
+                    &:hover{
+                    color:  #e43535;
+                }
+                } 
+            }
+        }
+    }
+    .leftSection {
+        float: left;
+        width: 50%;
+        height: 100px;
+       margin:20px 0;
+       input{
+          border: $input-border; 
+          height: 30px;
+          float: right;
+          width: calc(100% - 100px);
+          padding: 0px 10px 5px;
+       }::placeholder{
+        color: grey;
+        font-size: 12px;
+
+       }
+       button{
+           border-radius: 0;
+           height: 30px;
+           width: 90px;
+           background-color:$red;
+           border-color: $red;
+           font-family: $fontMain;
+           &:hover{
+               background-color: #bb2626;
+               border-color: $red;
+
+           }
+       }
+    }
+}
