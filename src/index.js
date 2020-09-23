@@ -18,7 +18,7 @@ export default class Header extends Component{
 
             <Fragment>
                 <Head />
-                <Main />
+                <Main/>
             </Fragment>
         )
     }

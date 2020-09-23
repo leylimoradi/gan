@@ -6,13 +6,28 @@ import Menu from '../components/menu'
 
 
 export default class Head extends Component {
+    componentDidMount() {
+        window.addEventListener("scroll", this.resizeHeaderOnScroll);
+        
+    }
 
+    resizeHeaderOnScroll() {
+        const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            shrinkOn = 150,
+            headerEl = document.getElementById("js-header");
+
+        if (distanceY > shrinkOn) {
+            headerEl.classList.add("shadow");
+        } else {
+            headerEl.classList.remove("shadow");
+        }
+    }
     render() {
         return (
 
             <Fragment>
 
-                <header>
+                <header id="js-header">
                     
                 <div className="container">
                     <Menu />

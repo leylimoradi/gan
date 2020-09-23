@@ -72,13 +72,14 @@ header .container svg {
     float: right;
 }
 footer {
-    position: fixed;
-    height: 40px;
-    background-color: grey;
+    
+  
     width: 100%;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    
+}
+.greyBar{
+  height: 40px;
+    background-color: grey;
 }
 .searchField {
     display: block;
@@ -262,16 +263,17 @@ a {
 }
 .mainSection {
     width: 78%;
-    height: 100%;
+    height: auto;
     float: right;
     background-color: white;
 }
 .sideSection {
     width: 22%;
-    height: 100%;
+    height:auto;
     float: left;
     background-color: white;
-    padding: 20px 10px 0;
+    padding: 20px 10px 0px;
+    margin-bottom: 60px;
 }
 .titleSide {
     width: 100%;
@@ -551,9 +553,10 @@ a {
 .pager {
     width: 100%;
     height: auto;
-
     float: right;
     position: relative;
+    margin-top: 20px;
+
 
 }
 .ui[class*="one column"].grid > .column:not(.row) {
@@ -654,4 +657,32 @@ a,
 }
 .modal-open header{
      padding-right: 17px
+}
+.sticky-top{
+    top: 50px;
+    z-index: 2;
+}
+.scroll-to-top{
+      width: 100%;
+    margin-top: 20px;
+    height: 40px;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding-top: 11px;
+    cursor: pointer;
+    margin-bottom: 20px;
+   
+}
+.irang{
+    float: right;
+     color: white;
+     padding-top: 10px;
+}
+.itemContac li{
+float: left;
+color: white;
+margin-right: 30px;
+padding-top: 11px;
 }

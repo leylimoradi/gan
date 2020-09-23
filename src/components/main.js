@@ -8,7 +8,9 @@ import State from '../components/stateBar.js';
 import Tag from '../components/tag.js';
 import BB from '../components/filter.js';
 
-import PaginationExampleCustomization from '../components/pagination.js'
+import PaginationExampleCustomization from '../components/pagination.js';
+import ScrollToTop from '../components/scrollToTop.js';
+import Footer from '../components/footer.js';
 
 
 
@@ -42,7 +44,7 @@ export default class Main extends Component {
                     </div>
 
 
-                    <aside className="sideSection">
+                        <aside className="sideSection sticky-top">
                         <div className="titleSide">کلیدواژه</div>
                         <Tag />
                         </aside>
@@ -50,8 +52,10 @@ export default class Main extends Component {
                             <PaginationExampleCustomization />
                         </div>
                     </div>
-                 
+                   
                 </main>
+                <ScrollToTop />
+                <Footer />
             </Fragment>
         )
     }
