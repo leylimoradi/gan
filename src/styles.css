@@ -649,3 +649,9 @@ a,
 .ui.menu .item{
     outline: none;
 }
+.modal-open{
+    padding-right: 17px !important;
+}
+.modal-open header{
+     padding-right: 17px
+}
