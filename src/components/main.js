@@ -2,12 +2,10 @@ import React from 'react';
 import { Component } from 'react';
 import { Fragment } from 'react';
 import { RiArrowLeftSLine } from 'react-icons/ri';
-
 import App from '../components/modal';
 import State from '../components/stateBar.js';
 import Tag from '../components/tag.js';
 import BB from '../components/filter.js';
-
 import PaginationExampleCustomization from '../components/pagination.js';
 import ScrollToTop from '../components/scrollToTop.js';
 import Footer from '../components/footer.js';
