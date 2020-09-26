@@ -1,10 +1,13 @@
 const path = require('path');
 var webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const AppManifestWebpackPlugin = require('app-manifest-webpack-plugin')
 
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
     template: path.join(__dirname, "examples/src/index.html"),
-    filename: "./index.html"
+    filename: "./index.html",
+    
+   
 });
 module.exports = {
 
