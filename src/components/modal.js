@@ -33,7 +33,7 @@ function App() {
        <div>
             < div className="share" onClick={
             () => setModalShow(true)
-        } > <RiShareLine size={20} /></div>
+        } > </div>
             <MyVerticallyCenteredModal show={modalShow} onHide={() => setModalShow(false)} />
         </div>
     );

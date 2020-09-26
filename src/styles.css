@@ -64,13 +64,7 @@ header .container {
     position: relative;
     background-color: #e43535;
 }
-header .container svg {
-    margin-top: 16px;
-    cursor: pointer;
-    margin-right: 60px;
-    z-index: 5;
-    float: right;
-}
+
 footer {
     
   
