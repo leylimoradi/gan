@@ -79,7 +79,14 @@ export default class BB extends Component {
 
                 </div>
 
-              
+                <div>
+                    {Object.keys(ads).map(key => (
+                        <div>
+                            {ads[key].type}
+                            <img src={ads[key].img} key={key} />
+                        </div>
+                    ))}
+                </div>
 
                 <ul className="listingItems">
 
