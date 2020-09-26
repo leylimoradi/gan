@@ -13,8 +13,10 @@ module.exports = {
 
         path: path.join(__dirname, "examples/dist"),
         filename: "bundle.js",
+        sourceMapFilename: "[name].js.map"
        
     },
+    devtool: "source-map",
     module: {
         rules: [
             {

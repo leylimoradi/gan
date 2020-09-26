@@ -388,8 +388,9 @@ a {
     float: right;
     border: none;
     text-align: right;
-    width: 100px;
+    width: calc(100% / 4 );
     text-decoration: none;
+    background-color: white;
     text-align: center;
     height: 30px;
     font-size: 12px;
@@ -407,11 +408,16 @@ a {
     float: right;
     width: 100%;
 }
+.btnContainer{
+    float: right;
+    width: 390px;
+    position: relative;
+}
 .filterBtn .underline {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 50px;
+    width: 25%;
     height: 2px;
     background: #4cb050;
     transition: all 0.4s ease-in-out;
@@ -425,21 +431,15 @@ a {
     right: 0;
 }
 .filterBtn button:nth-child(2).is-current~.underline {
-    right: 20%;
+    right: 25%;
 }
 .filterBtn button:nth-child(3).is-current~.underline {
-    right: 40%;
+    right: 50%;
 }
 .filterBtn button:nth-child(4).is-current~.underline {
-    right: 60%;
-}
-.filterBtn button:nth-child(5).is-current~.underline {
-    right: 80%;
+    right: 75%;
 }
 
-.filterBtn button:nth-child(6).is-current~.underline {
-    right: 100%;
-}
 .listingItems {
     border: 0 solid #ebebeb;
     border-width: 1px 1px 0 0;
@@ -458,7 +458,12 @@ a {
     position: relative;
 
 }
-
+.is-current{
+    color:#4cb050 ;
+}
+button:focus{
+    outline: none;
+}
 .itemDes img {
     width: 220px;
     height: 140px;
@@ -680,4 +685,9 @@ float: left;
 color: white;
 margin-right: 30px;
 padding-top: 11px;
+}
+
+
+.active {
+  background: green;
 }

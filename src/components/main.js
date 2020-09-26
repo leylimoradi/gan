@@ -14,6 +14,7 @@ import Footer from '../components/footer.js';
 
 
 
+
 export default class Main extends Component {
     render() {
         return (
@@ -41,7 +42,8 @@ export default class Main extends Component {
                     
                     </div>
 
-
+                     
+                  
                         <aside className="sideSection sticky-top">
                         <div className="titleSide">کلیدواژه</div>
                         <Tag />
