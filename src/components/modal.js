@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal'
-import { RiShareLine } from 'react-icons/ri';
+
 
 
 function MyVerticallyCenteredModal(props) {

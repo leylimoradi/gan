@@ -15,13 +15,15 @@ import Footer from '../components/footer.js';
 
 
 
+
 export default class Main extends Component {
     render() {
         return (
             <Fragment>
                 <main>
                 <div className="mapBar">
-                    <div className="container">
+                        <div className="container">
+                          
                         <ul>
                             <li>
                                 <a className="activeR" href="/#">ایرانگان</a>
