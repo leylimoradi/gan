@@ -88,9 +88,21 @@ export default class BB extends Component {
                     {
                         filteredList.map(
                             company => <li key={company.uniqueId}>
-                                <div className="itemDetails"></div>
+                                <div className="itemDetails">
+                                    <h4>{company.name}</h4>
+                                    <div>تعمیرگاه تخصصی انواع خودرو</div>
+                                    <div>کلینیک خودرو</div>
+                                    <div>تعمیر تخصصی گیربکس </div>
+                                    <div>
+
+                                        <span>111111</span>
+                                        <span>منطقه {company.eara}</span>
+                                        
+                                    </div>
+                                </div>
                                 <div className="itemDes">
-                                    <img src={company.img} alt={company.uniqueId}/>
+                                    {/* <img src='#' alt={company.uniqueId}/> */}
+                                    <span>ایرانگان</span>
                                     <div className="adsName">{company.name}</div>
                                     <div className="rowcode_star">
                                         <div className="codeBox">{company.code}</div>

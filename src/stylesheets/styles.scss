@@ -123,3 +123,47 @@ footer {
     height: 20px;
     top: 3px;
 }
+.itemDes{
+    span{
+           width: 220px;
+    height: 140px;
+    font-size: 15px;
+    background-color: #f0f0f0;
+    margin: auto;
+    color: #c3c3c3;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    }
+}
+.itemDetails{
+    text-align: right;
+   
+    h4{
+        font-size: 15px;
+        font-weight: normal;
+         font-family: "iranganFont";
+        
+    }
+    div{
+        color: grey;
+        font-size: 13px;
+        height: 30px;
+       
+        span:first-child{
+            float: right;
+            color: #e43535;
+        }
+        span:last-child{
+            float: left;
+             color: #e43535;
+
+        }
+    }
+    div:last-child{
+        margin-top: 20px;
+    }
+}
