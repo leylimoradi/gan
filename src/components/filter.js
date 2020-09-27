@@ -88,7 +88,7 @@ export default class BB extends Component {
                             company => <li key={company.uniqueId}>
                                 <div className="itemDetails"></div>
                                 <div className="itemDes">
-                                    <img src={company.img} alt={company.uniqueId}/>
+                                    <img src={ads.img} alt={company.uniqueId}/>
                                     <div className="adsName">{company.name}</div>
                                     <div className="rowcode_star">
                                         <div className="codeBox">{company.code}</div>
