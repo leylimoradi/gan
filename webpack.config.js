@@ -23,21 +23,10 @@ module.exports = {
     devtool: "source-map",
     module: {
         rules: [
-            {
-                test: /\.json$/,
-                use: [
-                    {
-                        loader: "file-loader",
-                        options: {
-                            esModule: false,
-                        },
-                    },
-                ],
-                type: "javascript/auto",
-            },
+            
             {
                 test: /\.js$/,
-                exclude: [path.resolve(__dirname, 'node_modules')],
+                exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
                     options: {

@@ -2,8 +2,9 @@ import React from 'react';
 import { Fragment } from 'react';
 import { Component } from 'react'
 import Logo from '../images/logoIrangan.svg';
-import Menu from '../components/menu'
-import TopBar from '../components/knowMore'
+import Menu from '../components/menu';
+
+import TopBar from '../components/knowMore';
 
 export default class Head extends Component {
     componentDidMount() {
@@ -30,7 +31,8 @@ export default class Head extends Component {
                 <header id="js-header">
                     <TopBar />
                 <div className="container">
-                    <Menu />
+                        <Menu />
+                    
                     <div className="logo">
                         <img src={Logo} alt="logo" />
                     </div>

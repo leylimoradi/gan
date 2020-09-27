@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Fragment } from 'react';
 import { Component } from 'react';
 import data from "../data/catagory.json"
