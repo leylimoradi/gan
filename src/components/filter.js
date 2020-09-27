@@ -1,7 +1,9 @@
 import React from 'react';
 
 import {Component} from 'react';
-import data from "../data/ads.json"
+import data from "../data/ads.json";
+import hh from "../img/ads1.jpg"
+
 
 console.clear();
 const ads = data.ads;
@@ -88,7 +90,7 @@ export default class BB extends Component {
                             company => <li key={company.uniqueId}>
                                 <div className="itemDetails"></div>
                                 <div className="itemDes">
-                                    <img src={ads.img} alt={company.uniqueId}/>
+                                    <img src={hh} alt={company.uniqueId}/>
                                     <div className="adsName">{company.name}</div>
                                     <div className="rowcode_star">
                                         <div className="codeBox">{company.code}</div>
