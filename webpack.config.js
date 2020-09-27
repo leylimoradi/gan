@@ -3,6 +3,7 @@ var webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const AppManifestWebpackPlugin = require('app-manifest-webpack-plugin')
 
+
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
     template: path.join(__dirname, "examples/src/index.html"),
     filename: "./index.html",
@@ -23,8 +24,20 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.json$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            esModule: false,
+                        },
+                    },
+                ],
+                type: "javascript/auto",
+            },
+            {
                 test: /\.js$/,
-                exclude: /node_modules/,
+                exclude: [path.resolve(__dirname, 'node_modules')],
                 use: {
                     loader: "babel-loader",
                     options: {
@@ -42,10 +55,7 @@ module.exports = {
                 
             },
            
-                {
-                    test: /\.json$/,
-                    loader: 'json-loader'
-                },
+       
            
             {
                 test: /\.jsx$/,
@@ -74,6 +84,7 @@ module.exports = {
                     },
                 ],
             },
+          
             {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: [
@@ -90,9 +101,10 @@ module.exports = {
             },
         ]
     },
+    
     plugins: [htmlWebpackPlugin],
     resolve: {
-        extensions: [".js", ".jsx" ,".json"]
+        extensions: [".js", ".jsx"]
     },
     devServer: {
         port: 3001
