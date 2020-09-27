@@ -1,0 +1,227 @@
+{
+    "ads": [
+        {
+            "uniqueId": 1,
+            "name": "تعمیرگاه زانتیا حاتمی",
+            "MostLiked": true,
+            "off": false,
+            "Mostviewed": true,
+            "star": 7,
+            "code": 257616,
+            "img": "src/img/ads1.jpg"
+        }, {
+            "uniqueId": 2,
+            "name": "فروشگاه لوازم یدکی هاشمی",
+            "MostLiked": false,
+            "off": true,
+            "Mostviewed": false,
+            "star": 7,
+            "code": 259158,
+            "img": "src/img/ads2.jpg"
+        }, {
+            "uniqueId": 3,
+            "name": "فروشگاه لوازم یدکی اتوپارت مردان",
+            "MostLiked": true,
+            "off": true,
+            "Mostviewed": false,
+            "star": 7,
+            "code": 260942,
+            "img": "src/img/ads3.jpg"
+        }, {
+            "uniqueId": 4,
+            "name": " فروشگاه لوازم یدکی یدک‌سازان",
+            "MostLiked": false,
+            "off": true,
+            "Mostviewed": true,
+            "star": 7,
+            "code": 251688,
+            "img": "src/img/ads4.jpg"
+        }, {
+            "uniqueId": 5,
+            "name": "تعمیرگاه گیربکس كيا اتوماتيك",
+            "MostLiked": true,
+            "off": false,
+            "Mostviewed": false,
+            "star": 7,
+            "code": 261384,
+            "img": "src/img/ads5.jpg"
+        }, {
+            "uniqueId": 6,
+            "name": "فروشگاه لوازم یدکی اتوپارت مردان",
+            "MostLiked": false,
+            "off": true,
+            "Mostviewed": false,
+            "star": 7,
+            "code": 251870,
+            "img": "src/img/ads6.jpg"
+        }, {
+            "uniqueId": 7,
+            "name": "بازرگانی و پخش آینه بغل CMC",
+            "MostLiked": true,
+            "off": false,
+            "Mostviewed": true,
+            "star": 7,
+            "code": 247075,
+            "img": "src/img/ads7.jpg"
+        }, {
+            "uniqueId": 8,
+            "name": "آذران صنعت محمدی",
+            "MostLiked": true,
+            "off": false,
+            "Mostviewed": true,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads8.jpg"
+        }, {
+            "uniqueId": 9,
+            "name": "تعمیرگاه بنز و بی ام و یاسر ",
+            "MostLiked": true,
+            "off": false,
+            "Mostviewed": true,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads13.jpg"
+        }, {
+            "uniqueId": 10,
+            "name": "شرکت ساب سازان ایرانیان ",
+            "MostLiked": false,
+            "off": true,
+            "Mostviewed": false,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads9.jpg"
+        }, {
+            "uniqueId": 11,
+            "name": "تعمیرگاه کیا و هیوندا جودکی ",
+            "MostLiked": false,
+            "off": true,
+            "Mostviewed": false,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads10.jpg"
+        }, {
+            "uniqueId": 12,
+            "name": "کلینیک تخصصی 1034 مزدا ",
+            "MostLiked": false,
+            "off": false,
+            "Mostviewed": true,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads11.jpg"
+        }, {
+            "uniqueId": 13,
+            "name": "فروشگاه لوازم یدکی مزدا کمالی ",
+            "MostLiked": false,
+            "off": false,
+            "Mostviewed": true,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads12.jpg"
+        }, {
+            "uniqueId": 14,
+            "name": "فروشگاه لنت ربانی ",
+            "MostLiked": false,
+            "off": false,
+            "Mostviewed": true,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads16.jpg"
+        }, {
+            "uniqueId": 15,
+            "name": "سالن صافکاری و نقاشی اتورنگ ورژ",
+            "MostLiked": false,
+            "off": false,
+            "Mostviewed": true,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads15.jpg"
+        }, {
+            "uniqueId": 16,
+            "name": "کلینیک تخصصی تعمیر مزدا حاتمی",
+            "MostLiked": false,
+            "off": false,
+            "Mostviewed": true,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads14.jpg"
+        }, {
+            "uniqueId": 17,
+            "name": "مجتمع تعمیرگاه ایران فابریک",
+            "MostLiked": true,
+            "off": true,
+            "Mostviewed": false,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads17.jpg"
+        }, {
+            "uniqueId": 18,
+            "name": "فروشگاه رنگ اتومبیل کریمی",
+            "MostLiked": true,
+            "off": true,
+            "Mostviewed": false,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads18.jpg"
+        }, {
+            "uniqueId": 19,
+            "name": "گروه تولیدی صنعتی جیحون موتور",
+            "MostLiked": true,
+            "off": true,
+            "Mostviewed": false,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads19.jpg"
+        },
+        {
+            "uniqueId": 20,
+            "name": "گروه صنعتی قرنی",
+            "MostLiked": true,
+            "off": true,
+            "Mostviewed": false,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads20.jpg"
+        },
+        {
+            "uniqueId": 21,
+            "name": "گروه صنعتی قرنی",
+            "MostLiked": true,
+            "off": true,
+            "Mostviewed": false,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads21.jpg"
+        },
+        {
+            "uniqueId": 22,
+            "name": "تعمیرگاه حاتمی",
+            "MostLiked": true,
+            "off": true,
+            "Mostviewed": false,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads22.jpg"
+        },
+        {
+            "uniqueId": 23,
+            "name": "تعمیرگاه زانتیا حاتمی",
+            "MostLiked": true,
+            "off": true,
+            "Mostviewed": false,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads23.jpg"
+        },
+        {
+            "uniqueId": 24,
+            "name": "عاملیت مجاز ایران خودرو کد 5015",
+            "MostLiked": true,
+            "off": true,
+            "Mostviewed": false,
+            "star": 7,
+            "code": 258748,
+            "img": "src/img/ads24.jpg"
+        }
+
+    ]
+}
