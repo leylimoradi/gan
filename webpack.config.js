@@ -41,6 +41,12 @@ module.exports = {
                 },
                 
             },
+           
+                {
+                    test: /\.json$/,
+                    loader: 'json-loader'
+                },
+           
             {
                 test: /\.jsx$/,
                 loader: "react-hot!babel",
@@ -86,7 +92,7 @@ module.exports = {
     },
     plugins: [htmlWebpackPlugin],
     resolve: {
-        extensions: [".js", ".jsx"]
+        extensions: [".js", ".jsx" ,".json"]
     },
     devServer: {
         port: 3001
