@@ -97,12 +97,15 @@ export default class BB extends Component {
 
                                         <span>111111</span>
                                         <span>منطقه {company.eara}</span>
-                                        
+
                                     </div>
                                 </div>
                                 <div className="itemDes">
-                                    {/* <img src='#' alt={company.uniqueId}/> */}
-                                    <span>ایرانگان</span>
+                                   
+                                    <span>
+                                        {/* ایرانگان */}
+                                     <img src={company.img} alt={company.uniqueId} />
+                                    </span>
                                     <div className="adsName">{company.name}</div>
                                     <div className="rowcode_star">
                                         <div className="codeBox">{company.code}</div>

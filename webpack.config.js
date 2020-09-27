@@ -75,10 +75,10 @@ module.exports = {
             },
           
             {
-                test: /\.(png|svg|jpg|gif|ico)$/,
+                test: /\.(png|svg|jpg|jpeg|gif|tiff)$/,
                 use: [
-                    'file-loader',
-                ],
+                    'file-loader?name=assets/[name].[ext]'
+                ]
               
             },
           
