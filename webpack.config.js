@@ -1,7 +1,8 @@
 const path = require('path');
 var webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const AppManifestWebpackPlugin = require('app-manifest-webpack-plugin')
+const AppManifestWebpackPlugin = require('app-manifest-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
@@ -22,7 +23,14 @@ module.exports = {
     },
     devtool: "source-map",
     module: {
+        
         rules: [
+            {
+                test: /\.json$/,
+                loader: 'json-loader',
+                exclude: [path.resolve(__dirname, 'node_modules')],
+                type: "javascript/auto"
+            },
             
             {
                 test: /\.js$/,
@@ -53,11 +61,8 @@ module.exports = {
                 
             },
             {
-                test: /\.css$/,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                ],
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
                 test: /\.s[ac]ss$/i,
@@ -75,7 +80,7 @@ module.exports = {
             },
           
             {
-                test: /\.(png|svg|jpg|jpeg|gif|tiff)$/,
+                test: /\.(png|svg|jpg|jpeg|gif|tiff|ico)$/,
                 use: [
                     'file-loader?name=assets/[name].[ext]'
                 ]
@@ -91,14 +96,15 @@ module.exports = {
         ]
     },
     
-    plugins: [htmlWebpackPlugin],
+    plugins: [htmlWebpackPlugin,
+            new MiniCssExtractPlugin()],
     resolve: {
-        extensions: [".js", ".jsx"]
+        extensions: [".js", ".jsx", "json" , "css"]
     },
     devServer: {
         port: 3001,
         compress: true,
         hot: true,
-        https: true
+      
     }
 };
