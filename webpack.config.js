@@ -99,6 +99,6 @@ module.exports = {
         port: 3001,
         compress: true,
         hot: true,
-        https: true
+     
     }
 };
