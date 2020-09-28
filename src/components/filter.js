@@ -16,8 +16,11 @@ const FILTER_DEFS = {
 };
 
 export default class BB extends Component {
+  
+
     componentDidMount() {
         document.getElementById("ddd").click()
+    
     }
     state = {
         activeIdx: 0

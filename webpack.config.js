@@ -9,16 +9,20 @@ const htmlWebpackPlugin = new HtmlWebpackPlugin({
     filename: "./index.html"
 });
 module.exports = {
-
+    mode: 'development',
     entry: path.join(__dirname, "examples/src/index.js"),
     output: {
 
         path: path.join(__dirname, "examples/dist"),
-        filename: "bundle.js",
-        sourceMapFilename: "[name].js.map"
+        filename: "[name].js",
+        chunkFilename: '[name].bundle.js',
+      
 
     },
-    devtool: "source-map",
+    performance: {
+        maxEntrypointSize: 400000
+    },
+    devtool: 'inline-source-map',
     module: {
 
         rules: [
@@ -67,7 +71,7 @@ module.exports = {
             },
             {
 
-                test: /\.(png|jp(e*)g|svg)$/,
+                test: /\.(png|jp(e*)g|svg|ico|jpg)$/,
                 use: [
                     {
                         loader: 'url-loader',
@@ -97,6 +101,6 @@ module.exports = {
     devServer: {
         port: 3001,
         compress: true,
-        hot: true
+      
     }
 };
