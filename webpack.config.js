@@ -75,7 +75,7 @@ module.exports = {
             },
           
             {
-                test: /\.(png|svg|jpg|jpeg|gif|tiff|ico)$/,
+                test: /\.(png|svg|jpg|jpeg|gif|tiff)$/,
                 use: [
                     'file-loader?name=assets/[name].[ext]'
                 ]
@@ -99,6 +99,6 @@ module.exports = {
         port: 3001,
         compress: true,
         hot: true,
-     
+        https: true
     }
 };
