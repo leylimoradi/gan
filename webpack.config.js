@@ -63,11 +63,24 @@ module.exports = {
                         }
                     }
                 ]
-            }, {
-                test: /\.(png|svg|jpg|jpeg|gif|tiff|ico)$/,
-                use: ['file-loader?name=assets/[name].[ext]']
 
-            }, {
+            },
+            {
+
+                test: /\.(png|jp(e*)g|svg)$/,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 8000,
+                            name: 'images/[hash]-[name].[ext]',
+                            publicPath: 'assets',
+                        }
+                    }
+                ]
+            }
+        
+            , {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use: ['file-loader']
             }
